@@ -305,6 +305,8 @@ public final class CfgApiRpc {
                 Objects.equals(ip, cfg.ip) &&
                 port == cfg.port &&
                 Objects.equals(enabled, cfg.enabled) &&
+                Objects.equals(enabledMethods, cfg.enabledMethods) &&
+                Objects.equals(disabledMethods, cfg.disabledMethods) &&
                 corsEnabled == cfg.corsEnabled &&
                 Objects.equals(corsOrigin, cfg.corsOrigin) &&
                 filtersEnabled == cfg.filtersEnabled &&
@@ -329,6 +331,8 @@ public final class CfgApiRpc {
             ip,
             port,
             enabled,
+            enabledMethods,
+            disabledMethods,
             corsEnabled,
             corsOrigin,
             filtersEnabled,
