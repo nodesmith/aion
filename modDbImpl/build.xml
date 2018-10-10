@@ -4,6 +4,7 @@
         <property name="dir.mod" value="../mod" />
 	<property name="dir.dest" value="./build/main" />
 	<property name="dir.test" value="./build/test" />
+	<property name="test.resources" value="./test/resources"/>
 	<property name="src.test" value="./test" />
 	<property name="test.report.dir" value="report" />
 
@@ -26,6 +27,7 @@
 		<pathelement location="${dir.lib}/leveldbjni-all-1.18.3.jar" />
 		<pathelement location="${dir.lib}/rocksdbjni-5.11.3.jar" />
 		<pathelement location="${dir.lib}/h2-mvstore-1.4.196.jar" />
+		<pathelement location="${dir.lib}/mongo-java-driver-3.8.2.jar" />
 	</path>
 
 
@@ -68,6 +70,7 @@
 			<classpath>
 				<path refid="classpath.test" />
 				<path refid="classpath.dependency" />
+				<pathelement location="${test.resources}" />
 				<pathelement location="${dir.test}" />
 			</classpath>
 			<formatter type="plain" usefile="false" />
