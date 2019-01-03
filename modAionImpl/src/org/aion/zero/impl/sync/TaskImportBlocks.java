@@ -64,7 +64,7 @@ import org.slf4j.Logger;
 final class TaskImportBlocks implements Runnable {
 
     private static final int COMPACT_FREQUENCY = 600_000; // 10 min
-    private static final int SLOW_IMPORT_TIME = 1_000; // 1 sec
+    private static final int SLOW_IMPORT_TIME = 30_000; // 30 sec
 
     private final AionBlockchainImpl chain;
 
